@@ -9,7 +9,7 @@
 
 1. Faz uma requisição para listar todos os autores. Quantos existem? Qual o formato da resposta?
 
-2. Busca o autor com id `1`. Que campos são retornados?
+2. Busca o autor com id `4`. Que campos são retornados?
 
 3. Busca um autor com um id que não existe, por exemplo `999`. Que status HTTP recebes? Qual a mensagem?
 
@@ -25,7 +25,7 @@
 
 9. Cria um autor sem o campo `nacionalidade`. Que erro recebes?
 
-10. Atualiza o autor com id `1` com dados válidos. O que muda na resposta?
+10. Atualiza o autor com id `4` com dados válidos. O que muda na resposta?
 
 11. Tenta atualizar um autor que não existe. Que status recebes?
 
@@ -41,7 +41,7 @@
 
 15. Lista todos os livros. Quantos existem após o seed?
 
-16. Busca o livro com id `1`. Que campos são retornados?
+16. Busca o livro com id `6`. Que campos são retornados?
 
 17. Busca um livro com id `999`. Que status e mensagem recebes?
 
@@ -89,7 +89,7 @@
 
 37. Faz um GET `/livros?ano=abc`. A API retorna erro ou uma lista vazia?
 
-38. Lista os livros do autor com id `1`. Quantos livros tem esse autor?
+38. Lista os livros do autor com id `4`. Quantos livros tem esse autor?
 
 39. Lista os livros de um autor que não existe, por exemplo `/autores/999/livros`. Que status recebes?
 
