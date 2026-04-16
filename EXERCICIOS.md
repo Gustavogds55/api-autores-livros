@@ -9,7 +9,7 @@
 
 1. Faz uma requisição para listar todos os autores. Quantos existem? Qual o formato da resposta?
 
-2. Busca o autor com id `4`. Que campos são retornados?
+2. Busca o autor com id `1`. Que campos são retornados?
 
 3. Busca um autor com um id que não existe, por exemplo `999`. Que status HTTP recebes? Qual a mensagem?
 
@@ -25,7 +25,7 @@
 
 9. Cria um autor sem o campo `nacionalidade`. Que erro recebes?
 
-10. Atualiza o autor com id `4` com dados válidos. O que muda na resposta?
+10. Atualiza o autor com id `1` com dados válidos. O que muda na resposta?
 
 11. Tenta atualizar um autor que não existe. Que status recebes?
 
@@ -39,9 +39,9 @@
 
 ## Módulo 2 — Livros: operações básicas
 
-15. Lista todos os livros. Quantos existem após o seed?
+15. Lista todos os livros. Quantos existem após o seed? (dica: deveriam ser 30)
 
-16. Busca o livro com id `6`. Que campos são retornados?
+16. Busca o livro com id `1`. Que campos são retornados?
 
 17. Busca um livro com id `999`. Que status e mensagem recebes?
 
@@ -89,7 +89,7 @@
 
 37. Faz um GET `/livros?ano=abc`. A API retorna erro ou uma lista vazia?
 
-38. Lista os livros do autor com id `4`. Quantos livros tem esse autor?
+38. Lista os livros do autor com id `1`. Quantos livros tem esse autor? (dica: José Saramago tem 4 livros)
 
 39. Lista os livros de um autor que não existe, por exemplo `/autores/999/livros`. Que status recebes?
 
@@ -117,9 +117,9 @@
 
 > Abre o banco com: `sqlite3 treino.db`
 
-47. Corre `SELECT * FROM autores;` — os dados do seed estão todos presentes?
+47. Corre `SELECT * FROM autores;` — os dados do seed estão todos presentes? Deverias ver 10 autores.
 
-48. Corre `SELECT * FROM livros;` — quantos livros existem? Os `autor_id` são válidos?
+48. Corre `SELECT * FROM livros;` — quantos livros existem? Deverias ver 30. Os `autor_id` são válidos?
 
 49. Faz o JOIN entre livros e autores para ver o nome do autor em cada livro. Todos os livros têm autor?
 
@@ -127,7 +127,7 @@
 
 51. Verifica se existe algum livro com `autor_id` que não corresponde a nenhum autor (LEFT JOIN com WHERE a.id IS NULL).
 
-52. Conta quantos livros cada autor tem. Algum autor tem zero livros?
+52. Conta quantos livros cada autor tem. Algum autor tem zero livros? (dica: todos têm pelo menos 2)
 
 53. Filtra os livros diretamente no banco pelo ano `1995`. O resultado bate com o da API?
 
