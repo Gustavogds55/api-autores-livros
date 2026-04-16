@@ -1,0 +1,14 @@
+{
+  "name": "api-autores-livros",
+  "version": "1.0.0",
+  "description": "API REST para estudo de testes de backend com Node.js, Express e SQLite",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "better-sqlite3": "^9.4.3"
+  }
+}
